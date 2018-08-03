@@ -1,14 +1,5 @@
 [
     {
-        "modid": "nucleusmultiinv",
-        "name": "NucleusMultiInv",
-        "version": "@project.informativeVersion@",
-        "description": "Separate world inventory.",
-        "requiredMods": [
-            "spongeapi@5.2.0-SNAPSHOT-c675e80"
-        ]
-    },
-    {
         "modid": "nucleusmultinv",
         "name": "NucleusMultInv",
         "version": "1.0-SNAPSHOT",

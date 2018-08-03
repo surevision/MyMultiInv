@@ -112,7 +112,7 @@ public class Utils {
         for (int slot = 0; slot < parentNode.getChildrenMap().keySet().size(); slot++)
         {
             NucleusMultiInv.getNucleusMultiInv().getLogger().info("config slot " + slot);
-            if (parentNode.getChildrenMap().keySet().contains(String.valueOf(slot)))
+            if (parentNode.getChildrenMap().keySet().contains(parentNode.getChildrenMap().get(String.valueOf(slot))))
             {
                 ConfigurationNode inventoryNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots", String.valueOf(slot));
                 Optional<ItemStack> optionalStack = ItemStackSerializer.readItemStack(inventoryNode, slot);
