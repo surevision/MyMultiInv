@@ -112,9 +112,9 @@ public class Utils {
         Iterator<Object> iterator = parentNode.getChildrenMap().keySet().iterator();
         for (int slot = 0; slot < parentNode.getChildrenMap().keySet().size(); slot++)
         {
-            NucleusMultiInv.getNucleusMultiInv().getLogger().info("config slot " + slot);
+//            NucleusMultiInv.getNucleusMultiInv().getLogger().info("config slot " + slot);
             Object obj = iterator.next();
-            NucleusMultiInv.getNucleusMultiInv().getLogger().info("key slot " + obj.toString());
+//            NucleusMultiInv.getNucleusMultiInv().getLogger().info("key slot " + obj.toString());
             if (parentNode.getChildrenMap().keySet().contains(obj))
             {
                 ConfigurationNode inventoryNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots", String.valueOf(obj));

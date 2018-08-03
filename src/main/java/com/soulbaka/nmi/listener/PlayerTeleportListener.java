@@ -30,14 +30,17 @@ import org.spongepowered.api.data.key.Keys;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.entity.MoveEntityEvent;
+import org.spongepowered.api.event.filter.Getter;
 import org.spongepowered.api.event.filter.cause.First;
 import org.spongepowered.api.world.World;
 
-public class PlayerMoveListener {
+public class PlayerTeleportListener {
 
     @Listener
-    public void onPlayerMove(MoveEntityEvent event, @First Player player)
+    public void onPlayerTeleport(MoveEntityEvent.Teleport event, @Getter("getTargetEntity") Player player)
     {
+//        NucleusMultiInv.getNucleusMultiInv().getLogger()
+//                .info("player " + player.getName() + " teleportes from: " + event.getFromTransform().getExtent().getName());
         if (!event.getFromTransform().getExtent().getUniqueId().equals(event.getToTransform().getExtent().getUniqueId()))
         {
             World oldWorld = event.getFromTransform().getExtent();
@@ -46,13 +49,13 @@ public class PlayerMoveListener {
             Utils.savePlayerInventory(player, oldWorld.getUniqueId());
 
 //            NucleusMultiInv.getNucleusMultiInv().getLogger()
-//                    .info("player " + player.getName() + " moves to: " + newWorld.getName());
+//                    .info("player " + player.getName() + " teleportes to: " + newWorld.getName());
 
 
             if (!Utils.doShareInventories(oldWorld.getName(), newWorld.getName()))
             {
                 NucleusMultiInv.getNucleusMultiInv().getLogger()
-                        .info("player " + player.getName() + " moves to new world : " + newWorld.getName());
+                        .info("player " + player.getName() + " teleportes to new world : " + newWorld.getName());
                 Utils.updatePlayerInventory(player, newWorld.getUniqueId());
             }
 
@@ -60,3 +63,4 @@ public class PlayerMoveListener {
         }
     }
 }
+
