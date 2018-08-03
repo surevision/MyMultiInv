@@ -24,7 +24,6 @@
  */
 package com.soulbaka.nmi.util;
 
-import com.soulbaka.nmi.NucleusMultiInv;
 import ninja.leaping.configurate.ConfigurationNode;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.data.DataQuery;
@@ -49,9 +48,8 @@ public class ItemStackSerializer
     {
         DataView view = ConfigurateTranslator.instance().translateFrom(node);
 
-        view = (DataView) view.get(DataQuery.of(String.valueOf(number))).get();
-        NucleusMultiInv.getNucleusMultiInv().getLogger().info("slot view " +
-                String.valueOf(number) + " " + view.toString());
+        if (view.get(DataQuery.of(String.valueOf(number))).isPresent())
+            view = (DataView) view.get(DataQuery.of(String.valueOf(number))).get();
 
         return Sponge.getDataManager().deserialize(ItemStack.class, view);
     }
