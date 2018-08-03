@@ -109,13 +109,16 @@ public class Utils {
         ConfigurationNode parentNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots");
         List<ItemStack> slots = Lists.newArrayList();
 
+        Iterator<Object> iterator = parentNode.getChildrenMap().keySet().iterator();
         for (int slot = 0; slot < parentNode.getChildrenMap().keySet().size(); slot++)
         {
             NucleusMultiInv.getNucleusMultiInv().getLogger().info("config slot " + slot);
-            if (parentNode.getChildrenMap().keySet().contains(parentNode.getChildrenMap().get(String.valueOf(slot))))
+            Object obj = iterator.next();
+            NucleusMultiInv.getNucleusMultiInv().getLogger().info("key slot " + obj.toString());
+            if (parentNode.getChildrenMap().keySet().contains(obj))
             {
-                ConfigurationNode inventoryNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots", String.valueOf(slot));
-                Optional<ItemStack> optionalStack = ItemStackSerializer.readItemStack(inventoryNode, slot);
+                ConfigurationNode inventoryNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots", String.valueOf(obj));
+                Optional<ItemStack> optionalStack = ItemStackSerializer.readItemStack(inventoryNode, obj);
                 slots.add(optionalStack.orElse(ItemStack.builder().itemType(ItemTypes.NONE).build()));
             }
             else

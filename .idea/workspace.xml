@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a490e4-f827-4eca-b44b-b8e9f668e031" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/NucleusMultInv-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/NucleusMultInv-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/mcmod.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/generateMetadata/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/generateMetadata/mcmod.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -79,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
@@ -104,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
-              <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,26 +113,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="111" column="86" lean-forward="true" selection-start-line="111" selection-start-column="86" selection-end-line="111" selection-end-column="86" />
+            <state relative-caret-position="301">
+              <caret line="118" column="13" lean-forward="true" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
               <folding>
                 <element signature="e#0#8909#0" expanded="true" />
                 <element signature="imports" expanded="true" />
                 <element signature="e#7004#7005#0" expanded="true" />
                 <element signature="e#7038#7039#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hs_err_pid11236.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hs_err_pid11236.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2461">
-              <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -586,12 +566,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/ItemStackSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="223" />
     <option name="y" value="40" />
     <option name="width" value="1400" />
@@ -1150,26 +1130,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="92" column="44" lean-forward="true" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/spongeforge-1.10.2-2477-5.2.0-BETA-2790.jar!/org/spongepowered/api/item/ItemTypes.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -1183,19 +1143,6 @@
           <caret line="53" column="64" lean-forward="true" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="111" column="86" lean-forward="true" selection-start-line="111" selection-start-column="86" selection-end-line="111" selection-end-column="86" />
-          <folding>
-            <element signature="e#0#8909#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#7004#7005#0" expanded="true" />
-            <element signature="e#7038#7039#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1218,6 +1165,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="92" column="44" lean-forward="true" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="118" column="13" lean-forward="true" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#8909#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#7004#7005#0" expanded="true" />
+            <element signature="e#7038#7039#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
