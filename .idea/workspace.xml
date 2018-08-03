@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1a490e4-f827-4eca-b44b-b8e9f668e031" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerTeleportListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/annotation-processors.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/NucleusMultiInv.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/NucleusMultiInv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/ReloadExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/ReloadExecutor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/listener/PlayerMoveListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/listener/PlayerMoveListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/NucleusMultInv-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/NucleusMultInv-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/NucleusMultiInv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/PluginInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/AsyncCommandExecutorBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/CommandExecutorBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/CommandLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/command/ReloadExecutor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/config/Config.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/config/Configurable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/config/InventoryConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/listener/PlayerMoveListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/listener/PlayerTeleportListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Configs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/ItemStackSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/PlayerInventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/soulbaka/nmi/util/Utils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/NucleusMultInv-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/mcmod.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/generateMetadata/mcmod.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/soulbaka/nmi/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/command/ReloadExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/command/ReloadExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -74,11 +91,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="NucleusMultiInv.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NucleusMultiInv.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="77" column="90" lean-forward="true" selection-start-line="77" selection-start-column="90" selection-end-line="77" selection-end-column="90" />
+            <state relative-caret-position="303">
+              <caret line="76" column="88" lean-forward="true" selection-start-line="76" selection-start-column="88" selection-end-line="76" selection-end-column="88" />
               <folding>
                 <element signature="e#0#3984#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -87,7 +104,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlayerMoveListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlayerMoveListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="257">
@@ -601,9 +618,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/ItemStackSerializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/command/ReloadExecutor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerTeleportListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/listener/PlayerMoveListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java" />
       </list>
     </option>
   </component>
@@ -911,7 +928,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1864" height="1098" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -921,7 +937,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5005587" side_tool="true" weight="0.29449838" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32901832" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -1224,32 +1240,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/PlayerInventory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="892">
           <caret line="114" column="50" selection-start-line="114" selection-start-column="50" selection-end-line="114" selection-end-column="50" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="77" column="90" lean-forward="true" selection-start-line="77" selection-start-column="90" selection-end-line="77" selection-end-column="90" />
-          <folding>
-            <element signature="e#0#3984#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1272,6 +1267,27 @@
           <caret line="47" column="62" lean-forward="true" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
           <folding>
             <element signature="e#0#2730#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/util/PlayerInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/soulbaka/nmi/NucleusMultiInv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="76" column="88" lean-forward="true" selection-start-line="76" selection-start-column="88" selection-end-line="76" selection-end-column="88" />
+          <folding>
+            <element signature="e#0#3984#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>

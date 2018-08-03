@@ -74,7 +74,7 @@ public class NucleusMultiInv {
     {
         // Register all commands.
         CommandLoader.registerCommands();
-        getGame().getEventManager().registerListeners(this, new PlayerMoveListener());
+//        getGame().getEventManager().registerListeners(this, new PlayerMoveListener());
         getGame().getEventManager().registerListeners(this, new PlayerTeleportListener());
 
         getLogger().info(String.format("%s %s is loaded!", PluginInfo.NAME, PluginInfo.VERSION));
