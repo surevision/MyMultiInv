@@ -27,15 +27,16 @@ package com.soulbaka.nmi.util;
 import org.spongepowered.api.item.inventory.ItemStack;
 
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 public class PlayerInventory
 {
     private UUID playerUuid;
     private UUID worldUuid;
-    private List<ItemStack> slots;
+    private Map<String, ItemStack> slots;
 
-    public PlayerInventory(UUID playerUuid, UUID worldUuid, List<ItemStack> slots)
+    public PlayerInventory(UUID playerUuid, UUID worldUuid, Map<String, ItemStack> slots)
     {
         this.playerUuid = playerUuid;
         this.worldUuid = worldUuid;
@@ -52,7 +53,7 @@ public class PlayerInventory
         return worldUuid;
     }
 
-    public List<ItemStack> getSlots()
+    public Map<String, ItemStack> getSlots()
     {
         return slots;
     }

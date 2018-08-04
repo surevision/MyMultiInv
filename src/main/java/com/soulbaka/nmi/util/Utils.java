@@ -25,6 +25,7 @@
 package com.soulbaka.nmi.util;
 
 import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
 import com.soulbaka.nmi.NucleusMultiInv;
 import com.soulbaka.nmi.config.Config;
@@ -33,18 +34,16 @@ import com.soulbaka.nmi.config.InventoryConfig;
 import ninja.leaping.configurate.ConfigurationNode;
 import ninja.leaping.configurate.commented.CommentedConfigurationNode;
 import org.spongepowered.api.Sponge;
+import org.spongepowered.api.data.type.HandType;
+import org.spongepowered.api.data.type.HandTypes;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.item.ItemTypes;
 import org.spongepowered.api.item.inventory.Inventory;
 import org.spongepowered.api.item.inventory.ItemStack;
 import org.spongepowered.api.world.World;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
+import java.util.function.BiConsumer;
 
 public class Utils {
 
@@ -81,13 +80,15 @@ public class Utils {
                 if (i < 36)
                     stack = slots.get(i).peek();
                 else if (i == 36)
-                    stack = player.getHelmet();
-                else if (i == 37)
-                    stack = player.getChestplate();
-                else if (i == 38)
-                    stack = player.getLeggings();
-                else if (i == 39)
                     stack = player.getBoots();
+                else if (i == 37)
+                stack = player.getLeggings();
+                else if (i == 38)
+                    stack = player.getChestplate();
+                else if (i == 39)
+                    stack = player.getHelmet();
+                else if (i == 40)
+                    stack = player.	getItemInHand(HandTypes.OFF_HAND);
                 else
                     stack = Optional.empty();
 
@@ -107,8 +108,7 @@ public class Utils {
     public static PlayerInventory getPlayerInventory(UUID playerUuid, UUID worldUuid)
     {
         ConfigurationNode parentNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots");
-        List<ItemStack> slots = Lists.newArrayList();
-
+        Map<String, ItemStack> slots = Maps.newTreeMap();
         Iterator<Object> iterator = parentNode.getChildrenMap().keySet().iterator();
         for (int slot = 0; slot < parentNode.getChildrenMap().keySet().size(); slot++)
         {
@@ -119,11 +119,11 @@ public class Utils {
             {
                 ConfigurationNode inventoryNode = Configs.getConfig(inventoryConfig).getNode("inventory", playerUuid.toString(), worldUuid.toString(), "slots", String.valueOf(obj));
                 Optional<ItemStack> optionalStack = ItemStackSerializer.readItemStack(inventoryNode, obj);
-                slots.add(optionalStack.orElse(ItemStack.builder().itemType(ItemTypes.NONE).build()));
+                slots.put(String.valueOf(obj), optionalStack.orElse(ItemStack.builder().itemType(ItemTypes.NONE).build()));
             }
             else
             {
-                slots.add(ItemStack.builder().itemType(ItemTypes.NONE).build());
+                slots.put(String.valueOf(obj), ItemStack.builder().itemType(ItemTypes.NONE).build());
             }
         }
 
@@ -140,10 +140,10 @@ public class Utils {
 
         if (playerInventory != null)
         {
-            final Iterator<ItemStack> slots = playerInventory.getSlots().iterator();
-            player.getInventory().slots().forEach(c -> {
-                if (slots.hasNext())
-                    c.set(slots.next());
+            Utils.forEach(player.getInventory().slots(), (index, c) -> {
+                if (playerInventory.getSlots().get(String.valueOf(index)) != null) {
+                    ((Inventory)c).set(playerInventory.getSlots().get(String.valueOf(index)));
+                }
             });
         }
     }
@@ -172,5 +172,16 @@ public class Utils {
     public static void doReload()
     {
         mainConfig.setup();
+    }
+
+    public static <E> void forEach(
+            Iterable<? extends E> elements, BiConsumer<Integer, ? super E> action) {
+        Objects.requireNonNull(elements);
+        Objects.requireNonNull(action);
+
+        int index = 0;
+        for (E element : elements) {
+            action.accept(index++, element);
+        }
     }
 }
