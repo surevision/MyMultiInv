@@ -1,6 +1,10 @@
 plugins {
     id 'org.spongepowered.plugin' version '0.8.1'
+    id "com.github.hierynomus.license" version "0.12.1"
+    id 'net.ellune.blossom' version '1.0.1'
 }
+
+apply plugin: 'net.ellune.blossom'
 
 group 'com.soulbaka.nmi'
 version '1.0-SNAPSHOT'
@@ -16,9 +20,25 @@ repositories {
     }
 }
 
+configurations {
+    shade
+    compile.extendsFrom shade
+}
+
 dependencies {
     compile files('libs/guava-26.0-jre.jar')
     compile files('libs/spongeforge-1.10.2-2477-5.2.0-BETA-2790.jar')
     testCompile group: 'junit', name: 'junit', version: '4.12'
     implementation 'com.google.code.gson:gson:2.8.5'
+}
+
+def getGitHash() {
+    def process = 'git rev-parse --short HEAD'.execute()
+    process.waitFor()
+    return '-' + (process.exitValue() ? 'unknown' : process.text.trim())
+}
+
+blossom {
+    replaceToken '@project.version@', project.version, 'src/main/java/com/soulbaka/nmi/PluginInfo.java'
+    replaceToken '@project.informativeVersion@', project.version, 'src/main/java/com/soulbaka/nmi/PluginInfo.java'
 }
